@@ -1,3 +1,16 @@
+# Backup files etc.
+*~
+\#*\#
+*.bak
+*.backup
+.*.sw[a-z]
+
+# Mac OS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
