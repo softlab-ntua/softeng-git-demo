@@ -4,5 +4,5 @@ def least_factorial(n):
     while True:
         # The invariant here is that k == (m-1)!
         if k >= n: return k
-        m += 1
-        k *= m
+        m = m + 1
+        k = k * m

@@ -14,6 +14,8 @@ class Test(unittest.TestCase):
         self.assertEqual(T.least_factorial(121), 720)
 
         self.assertEqual(T.least_factorial(0), 1)
+        self.assertEqual(T.least_factorial(-1), 1)
+        self.assertEqual(T.least_factorial(-11), 1)
 
 if __name__ == '__main__':
     unittest.main()
