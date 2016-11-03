@@ -1,7 +1,7 @@
 .PHONY: default setup venv deps clean distclean tests
 
 VIRTUALENV=virtualenv
-VIRTUALENV_OPTS=--no-site-packages
+VIRTUALENV_OPTS=--python=python3 --no-site-packages
 VIRTUALENV_DIR=venv
 
 default: tests
@@ -18,7 +18,7 @@ deps:
 	pip install -Ur requirements.txt
 
 clean:
-	$(RM) *~
+	$(RM) *~ *.pyc
 
 distclean: clean
 	$(RM) -fr venv/
